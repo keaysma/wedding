@@ -1,1 +1,12 @@
-node_modules/**
+node_modules
+
+# SvelteKit build output
+.svelte-kit
+/build
+/package
+.env
+.env.*
+!.env.example
+
+# OS-generated files
+.DS_Store
