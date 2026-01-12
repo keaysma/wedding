@@ -123,7 +123,7 @@
         position: relative;
         text-align: center;
         
-        padding: 2em 0 0 0;
+        padding: 4vh 0 0;
         margin: 0 auto;
         max-width: 768px;
 
