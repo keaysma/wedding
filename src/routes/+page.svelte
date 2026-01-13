@@ -95,7 +95,7 @@
     </div>
 
     
-    <a class="button-like rsvp" target="_blank" href="https://552547228.planningpod.com/#rsvp-panel">RSVP</a>
+    <a class="button-like rsvp" target="_blank" href="https://sheetasfamily.planningpod.com/index.cfm?#rsvp-panel">RSVP</a>
 </section>
 
 <style lang="scss">
