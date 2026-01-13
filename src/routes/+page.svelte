@@ -153,6 +153,8 @@
                 top: -20%;
                 width: 24%;
 
+                overflow: visible;
+
                 text {
                     font-family: Helvetica, sans-serif;
                     font-size: small;
