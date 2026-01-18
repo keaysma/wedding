@@ -130,7 +130,7 @@
 
         @media screen and (max-width: 768px) {
             flex-direction: column;
-            margin: auto 0 0 0;
+            margin: auto 0 2em 0;
         }
     }
 
@@ -142,6 +142,10 @@
         width: min(850px, 100%);
         
         margin: 2em auto;
+
+        @media screen and (max-width: 768px) {
+            margin: auto;
+        }
 
         > img {
             width: 100%;
@@ -171,7 +175,8 @@
 
     section.header {
         position: relative;
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
         
         padding: 4vh 0 0;
