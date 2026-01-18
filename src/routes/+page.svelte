@@ -117,7 +117,7 @@
     }
 
     .button-group {
-        display: inline-flex;
+        display: flex;
         gap: 0.25em;
 
         width: 100%;
@@ -130,7 +130,7 @@
 
         @media screen and (max-width: 768px) {
             flex-direction: column;
-            margin-top: auto;
+            margin: auto 0 0 0;
         }
     }
 
@@ -171,11 +171,13 @@
 
     section.header {
         position: relative;
+        display: block;
         text-align: center;
         
         padding: 4vh 0 0;
         margin: 0 auto;
         max-width: 768px;
+        height: calc(100% - 4vh);
 
         h1 {
             font-family: "Fleur De Leah";

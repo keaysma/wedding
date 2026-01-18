@@ -1,3 +1,13 @@
+html[format="single-page"] {
+    height: 100vh;
+
+    // overflow: hidden;
+
+    > body {
+        height: 100%;
+    }
+}
+
 body {
     padding: 0 1em;
     margin: 0;
@@ -24,6 +34,6 @@ body {
 }
 
 .glow {
-    color: var(--mark-timer-color); 
+    color: var(--mark-timer-color);
     mix-blend-mode: hard-light;
 }
