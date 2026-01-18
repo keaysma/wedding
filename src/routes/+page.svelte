@@ -73,7 +73,7 @@
 
     <div class="polaroid" style="transform: rotate3d({0.75 + (pageX - 0.5)}, {0.5 + (pageY - 0.5)}, 0.1, 9deg) scale3d(0.95, 0.95, 0.95) translate3d(-5px, 5px, 0px);">
             <img  src="RM-Sunset-1.jpg" alt="That's us <3" />
-            <span class="glow mark"><span class="digit">{remaining.weeks}</span> WEEKS, <span class="digit">{remaining.days}</span> DAYS, <span class="digit">{remaining.hours}</span> HOURS, <span class="digit">{remaining.minutes}</span> MINUTES, <span class="digit">{remaining.seconds}</span> SECONDS</span>
+            <span class="mark"><span class="digit">{remaining.weeks}</span> WEEKS, <span class="digit">{remaining.days}</span> DAYS, <span class="digit">{remaining.hours}</span> HOURS, <span class="digit">{remaining.minutes}</span> MINUTES, <span class="digit">{remaining.seconds}</span> SECONDS</span>
     </div>
 
     <div class="button-group">
@@ -111,8 +111,8 @@
 
         &[href="#disabled"] {
             pointer-events: none;
-            background-color: gray;
-            border-color: gray;
+            background-color: var(--background-disabled);
+            border-color: var(--background-disabled);
         }
     }
 
@@ -135,7 +135,7 @@
     }
 
     .polaroid {
-        --polaroid-shadow: #d6be87;
+        // --polaroid-shadow: #d6be87;
 
         position: relative;
         
@@ -151,10 +151,10 @@
             width: 100%;
             display: block;
             box-shadow: 
-                    4px  4px 8px var(--polaroid-shadow), 
-                    4px -4px 8px var(--polaroid-shadow),
-                -4px -4px 8px var(--polaroid-shadow), 
-                -4px  4px 8px var(--polaroid-shadow); 
+                 4px  4px 8px var(--dropshadow-color), 
+                 4px -4px 8px var(--dropshadow-color),
+                -4px -4px 8px var(--dropshadow-color), 
+                -4px  4px 8px var(--dropshadow-color); 
             border: 5px solid white;
             border-bottom-width: 30px;
         }
@@ -166,6 +166,9 @@
             margin: 0 0.25em 0.25em 0;
 
             font-family: "Digital-7";
+
+            color: var(--mark-timer-color);
+            mix-blend-mode: hard-light;
 
             .digit {
                 font-family: "7Segment";

@@ -12,28 +12,11 @@ body {
     padding: 0 1em;
     margin: 0;
 
-    /* --background-color: aliceblue; */
-    /* --background-color: peachpuff; */
-    /* --background-color: bisque; */
-    /* --background-color: blanchedalmond; */
-    --background-color: #fae8bf;
-    --background-color-light: #b3838666;
-    --background-color-border: #b3838699;
-
-    /* --foreground-color: black; */
-    /* --foreground-color: black; */
-    /* --foreground-color: burlywood;  */
-    /* or cadetblue, chocolate, cornflowerblue, crimson, darkcyan, indigo, maroon, navy, olive, sienna, steelblue, teal*/
-    /* --foreground-color: burlywood; */
+    --background-disabled: #b49899;
+    --background-color: #ffc7b1;
     --foreground-color: #b38385;
-    --anchorlink-color: #8777a5;
-
     --mark-timer-color: #fdb08e;
-    --outer-glow-color: gold;
-    background-color: var(--background-color);
-}
+    --dropshadow-color: #0002;
 
-.glow {
-    color: var(--mark-timer-color);
-    mix-blend-mode: hard-light;
+    background-color: var(--background-color);
 }
