@@ -7,8 +7,8 @@
 
     // Function to update the coordinates on mouse movement
     function handleMousemove(event: MouseEvent) {
-        pageX = (event.pageX / window.outerWidth);
-        pageY = (event.pageY / window.outerHeight);
+        pageX = (event.pageX / window.innerWidth);
+        pageY = (event.pageY / window.innerHeight);
     }
 
     const tMillisSeconds = 1000;
@@ -71,6 +71,7 @@
     <h1>Raquel & Michael</h1>
     <h2>October 24, 2026, 11AM • Lucketts, VA</h2>
 
+    <!-- <div class="polaroid" style="transform: rotate3d({(1 - (pageY * 2))}, {-1 + (pageX * 2)}, 0.1, 10deg) scale3d(0.95, 0.95, 0.95) translate3d(-5px, 5px, 0px);"> -->
     <div class="polaroid" style="transform: rotate3d({0.75 + (pageX - 0.5)}, {0.5 + (pageY - 0.5)}, 0.1, 9deg) scale3d(0.95, 0.95, 0.95) translate3d(-5px, 5px, 0px);">
             <img  src="RM-Sunset-1.jpg" alt="That's us <3" />
             <span class="mark"><span class="digit">{remaining.weeks}</span> WEEKS, <span class="digit">{remaining.days}</span> DAYS, <span class="digit">{remaining.hours}</span> HOURS, <span class="digit">{remaining.minutes}</span> MINUTES, <span class="digit">{remaining.seconds}</span> SECONDS</span>
@@ -122,7 +123,7 @@
 
         width: 100%;
 
-        margin: 1em auto 0;
+        margin: auto auto 2em;
 
         > * {
             flex: 1;
@@ -130,22 +131,15 @@
 
         @media screen and (max-width: 768px) {
             flex-direction: column;
-            margin: auto 0 2em 0;
         }
     }
 
     .polaroid {
-        // --polaroid-shadow: #d6be87;
-
         position: relative;
         
         width: min(850px, 100%);
-        
-        margin: 2em auto;
 
-        @media screen and (max-width: 768px) {
-            margin: auto;
-        }
+        margin: auto;
 
         > img {
             width: 100%;
@@ -182,10 +176,11 @@
         flex-direction: column;
         text-align: center;
         
-        padding: 4vh 0 0;
-        margin: 0 auto;
+        padding: 2em 0 0;
+        margin: auto;
         max-width: 768px;
-        height: calc(100% - 4vh);
+        height: min(1010px, calc(100% - 4vh));
+
 
         h1 {
             font-family: "Fleur De Leah";
@@ -199,6 +194,5 @@
             color: var(--foreground-color);
             margin: 0;
         }
-
     }
 </style>
