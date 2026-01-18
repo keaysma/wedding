@@ -69,7 +69,7 @@
 
 <section class="header">
     <h1>Raquel & Michael</h1>
-    <h2>October 24, 2026, 11AM ♥ Lucketts, VA</h2>
+    <h2>October 24, 2026, 11AM <span class="small-heart">♥</span> Lucketts, VA</h2>
 
     <!-- <div class="polaroid" style="transform: rotate3d({(1 - (pageY * 2))}, {-1 + (pageX * 2)}, 0.1, 10deg) scale3d(0.95, 0.95, 0.95) translate3d(-5px, 5px, 0px);"> -->
     <div class="polaroid" style="transform: rotate3d({0.75 + (pageX - 0.5)}, {0.5 + (pageY - 0.5)}, 0.1, 9deg) scale3d(0.95, 0.95, 0.95) translate3d(-5px, 5px, 0px);">
@@ -176,6 +176,13 @@
                 font-family: "7Segment";
             }
         }
+    }
+
+    .small-heart {
+        position: relative;
+        top: -0.35em;
+
+        font-size: 0.5em;
     }
 
     section.header {
