@@ -142,7 +142,10 @@
     .polaroid {
         position: relative;
         
+        // Guards against very-wide screens and very narrow screens
         width: min(850px, 100%);
+        // Guards against short & wide screen overflow
+        max-width: 75svh;
 
         margin: auto;
 
