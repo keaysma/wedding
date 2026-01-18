@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/favicon.svg';
+	import favicon from '$lib/assets/favicon.ico';
 	import '../app.scss';
 
 	let { children } = $props();
@@ -7,6 +7,7 @@
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
+	<title>{"Raquel ♥ Michael"}</title>
 	<style>
 	@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
 
