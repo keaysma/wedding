@@ -79,7 +79,8 @@
 
     <div class="button-group">
         <a class="button-like rsvp" target="_blank" href="https://sheetasfamily.planningpod.com/index.cfm?#rsvp-panel">RSVP</a>
-        <a class="button-like registry" target="_blank" href="#disabled">Registry</a>
+        <!-- svelte-ignore a11y_missing_attribute -->
+        <a class="button-like registry">Registry</a>
         <a class="button-like directions" target="_blank" href="https://maps.app.goo.gl/TdLEcWCqyf4RmQeW8">Directions</a>
     </div>
 </section>
@@ -110,10 +111,14 @@
             background-color: black;
         }
 
-        &[href="#disabled"] {
-            pointer-events: none;
+        &.registry {
+            cursor: not-allowed;
             background-color: var(--background-disabled);
             border-color: var(--background-disabled);
+
+            &:hover {
+                color: var(--background-color);
+            }
         }
     }
 
