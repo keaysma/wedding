@@ -77,12 +77,18 @@
             <span class="mark"><span class="digit">{remaining.weeks}</span> WEEKS, <span class="digit">{remaining.days}</span> DAYS, <span class="digit">{remaining.hours}</span> HOURS, <span class="digit">{remaining.minutes}</span> MINUTES, <span class="digit">{remaining.seconds}</span> SECONDS</span>
     </div>
 
+    <p>♥ More info coming later ♥</p>
+
+    <!--
     <div class="button-group">
         <a class="button-like rsvp" target="_blank" href="https://sheetasfamily.planningpod.com/index.cfm?#rsvp-panel">RSVP</a>
-        <!-- svelte-ignore a11y_missing_attribute -->
+        < !-- svelte-ignore a11y_missing_attribute -- >
         <a class="button-like registry">Registry</a>
-        <a class="button-like directions" target="_blank" href="https://maps.app.goo.gl/TdLEcWCqyf4RmQeW8">Directions</a>
+        < !-- svelte-ignore a11y_missing_attribute -- >
+        <a class="button-like directions">FAQ</a>
+        < !-- <a class="button-like directions" target="_blank" href="https://maps.app.goo.gl/TdLEcWCqyf4RmQeW8">Directions</a> -- >
     </div>
+    -->
 </section>
 
 <style lang="scss">
@@ -191,23 +197,25 @@
         flex-direction: column;
         text-align: center;
         
-        padding: 2em 0 0;
+        padding: 2em 0 1em;
         margin: auto;
         max-width: 768px;
-        height: min(1010px, calc(100% - 4vh));
+        height: min(1010px, calc(100% - 3em));
 
 
         h1 {
             font-family: "Fleur De Leah";
             font-size: min(12vw, 7em);
             margin: 0;
-            color: var(--foreground-color);
         }
 
         h2 {
             font-size: min(4.5vw, 2.5em);
-            color: var(--foreground-color);
             margin: 0;
+        }
+
+        p {
+            font-size: 2em;
         }
     }
 </style>
