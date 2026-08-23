@@ -9,7 +9,7 @@
 	<link rel="icon" href={favicon} />
 	<title>{"Raquel ♥ Michael"}</title>
 	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Mooli&display=swap');
 
 	.fleur-de-leah-regular {
 		font-family: "Fleur De Leah", cursive;

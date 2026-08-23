@@ -1,11 +1,29 @@
 <ul class="faqs">
+    <li id="return-home">
+        <a href="/">☜ Back to Homepage</a>
+    </li>
+    <li>
+        <details>
+            <summary>
+                When should I RSVP by?
+            </summary>
+            <!--I picked that date off of the top of my head btw-->
+            <p>
+                The sooner the better! Please get back to us by October 7th.
+            </p>
+        </details>
+    </li>
     <li>
         <details>
             <summary>
                 Where is the wedding?
             </summary>
             <p>
-                Faith Like a Mustard Seed Farm.
+                The wedding ceremony and reception is at Faith Like a Mustard Seed Farm. <br>
+                Address: 42906 Lucketts Rd, Leesburg, VA 20176 <br>
+                <a href="https://maps.app.goo.gl/ynDBXuKPZ8QjdLYH6">Google Maps Link</a>
+                <br><br>
+                The ceremoney will be held outside facing the Blue Ridge Mountains, weather permitting. The reception will be held in the barn. If there is rain the ceremony will also be held in the barn.
             </p>
         </details>
     </li>
@@ -15,7 +33,7 @@
                 What time does the ceremony start?
             </summary>
             <p>
-                The ceremony will start at 3:30PM (double check)
+                The ceremony will start at 3:30PM sharp. We recommend that guests aim to arrive at the venue at closer to 3PM to 3:15PM to say hello to other guests and grab a seat!
             </p>
         </details>
     </li>
@@ -25,13 +43,52 @@
                 Where can I park my car?
             </summary>
             <p>
-                The venue provides enough parking for 60 vehicles (double check)
+                The venue provides parking space on site, its right near the horse barn, and we will have signage to direct you to the parking.
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>
+                Are there hotel room blocks?
+            </summary>
+            <p>
+                (work in progress)
+            </p>
+        </details>
+    </li>
+    <li>
+        <details>
+            <summary>
+                What is the dress code?
+            </summary>
+            <p>
+                Cocktail hour dress code: semi-formal wear like dresses, suit jackets and slacks, but, not too formal.
             </p>
         </details>
     </li>
 </ul>
+<img id="gremlin" src="/sheeta.png" />
 
 <style lang="scss">
+#return-home {
+    padding-bottom: 1em;
+
+    a {
+        font-size: 1.5em;
+        text-decoration: none;
+    }
+}
+
+#gremlin {
+    position: fixed;
+    width: 12em;
+    transform: ScaleX(-1);
+    opacity: 0.33;
+    right: 2em;
+    bottom: 0.5em;
+}
+
 ul.faqs {
     list-style: none;
 
@@ -55,6 +112,7 @@ ul.faqs {
                 content-visibility 0.5s allow-discrete;
             overflow: hidden;
             height: 0;
+            font-family: "Mooli", sans-serif;
         }
   
         &[open]::details-content {
@@ -63,6 +121,8 @@ ul.faqs {
 
         summary {
             font-size: larger;
+
+            cursor: pointer;
 
             &::marker {
                 // content: "♥︎ ";
