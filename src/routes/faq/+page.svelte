@@ -23,7 +23,7 @@
                 Address: 42906 Lucketts Rd, Leesburg, VA 20176 <br>
                 <a href="https://maps.app.goo.gl/ynDBXuKPZ8QjdLYH6">Google Maps Link</a>
                 <br><br>
-                The ceremoney will be held outside facing the Blue Ridge Mountains, weather permitting. The reception will be held in the barn. If there is rain the ceremony will also be held in the barn.
+                The ceremoney will be held outside facing the countryside, weather permitting. The reception will be held in the barn. If there is rain the ceremony will also be held in the barn.
             </p>
         </details>
     </li>
@@ -33,7 +33,7 @@
                 What time does the ceremony start?
             </summary>
             <p>
-                The ceremony will start at 3:30PM sharp. We recommend that guests aim to arrive at the venue at closer to 3PM to 3:15PM to say hello to other guests and grab a seat!
+                The ceremony will start at 3:30PM. We recommend that guests aim to arrive at the venue at closer to 3PM to 3:15PM to say hello to other guests and grab a seat!
             </p>
         </details>
     </li>
@@ -53,7 +53,7 @@
                 Are there hotel room blocks?
             </summary>
             <p>
-                (work in progress)
+                We are working to secure a room block at Embassy Suits by Hilton Dulles. If you need a hotel room, please check back here in a week for confirmation!
             </p>
         </details>
     </li>
