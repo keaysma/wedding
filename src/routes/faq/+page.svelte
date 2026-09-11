@@ -53,7 +53,10 @@
                 Are there hotel room blocks?
             </summary>
             <p>
-                We are working to secure a room block at Embassy Suits by Hilton Dulles. If you need a hotel room, please check back here in a week for confirmation!
+                We have a room block at the Washington Dulles Airport Mariot Hotel, you can book your reservation right here: <a target="_blank" href="https://www.marriott.com/event-reservations/reservation-link.mi?id=1789055572399&key=GRP&app=resvlink">link to hotel block</a>.
+                <br/>
+                <br/>
+                Hotel reservations with the room block must be made by <b>September 25</b>!
             </p>
         </details>
     </li>
