@@ -17,7 +17,7 @@
     const tHoursDays = 24;
     const tDaysWeeks = 7;
 
-    let weddingStartAt = new Date("October 24 2026, 3:00 PM EDT");
+    let weddingStartAt = new Date("October 24 2026, 3:30 PM EDT");
 
     function getRemainingTime (): {
         weeks: string,
