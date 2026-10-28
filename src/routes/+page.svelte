@@ -11,13 +11,22 @@
         pageY = (event.pageY / window.innerHeight);
     }
 
+    // Get the nearest October 24 date in the future
+    function getProximalYear () {
+        const currentYear = (new Date()).getFullYear();
+        const thisYearDate = new Date(`October 24 ${currentYear}, 3:30 PM EDT`);
+
+        // Coalesce bool into +0/+1
+        return currentYear + (new Date() > thisYearDate);
+    }
+
     const tMillisSeconds = 1000;
     const tSecondsMinutes = 60;
     const tMinutesHours = 60;
     const tHoursDays = 24;
     const tDaysWeeks = 7;
 
-    let weddingStartAt = new Date("October 24 2026, 3:30 PM EDT");
+    let weddingStartAt = new Date(`October 24 ${getProximalYear()}, 3:30 PM EDT`);
 
     function getRemainingTime (): {
         weeks: string,
